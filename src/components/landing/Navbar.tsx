@@ -95,14 +95,13 @@ export default function Navbar() {
 
 						<div className="hidden md:flex items-center gap-2.5 shrink-0">
 							<a
-								href="/dashboard"
+								href="https://aron.iliterate.ai/login"
 								className="px-5 py-2 text-[0.84rem] text-text-primary font-semibold rounded-full border border-border-strong hover:bg-white/[0.04] transition-all duration-200"
 							>
 								Login
 							</a>
 							<a
-								href="#pricing"
-								onClick={(e) => scrollTo(e, '#pricing')}
+								href="https://aron.iliterate.ai/register"
 								className="inline-flex items-center gap-1.5 px-6 py-2.5 bg-primary text-white rounded-full text-[0.84rem] font-semibold hover:bg-primary-dark active:scale-[0.97] transition-all duration-200 shadow-[0_2px_16px_rgba(59,130,246,0.35)]"
 							>
 								Sign Up
@@ -153,16 +152,16 @@ export default function Navbar() {
 							))}
 							<div className="h-px bg-border-default mx-4 my-2" />
 							<div className="flex gap-2 p-2">
-								<Link
-									href="/dashboard"
+								<a
+									href="https://aron.iliterate.ai/login"
 									onClick={() => setMobileOpen(false)}
 									className="flex-1 text-center py-3 text-text-primary text-[0.88rem] font-semibold rounded-2xl border border-border-strong"
 								>
 									Login
-								</Link>
+								</a>
 								<a
-									href="#pricing"
-									onClick={(e) => scrollTo(e, '#pricing')}
+									href="https://aron.iliterate.ai/register"
+									onClick={() => setMobileOpen(false)}
 									className="flex-1 text-center py-3 bg-primary text-white rounded-2xl text-[0.88rem] font-semibold"
 								>
 									Sign Up

@@ -85,22 +85,28 @@ export default function Hero() {
                     transition={{ delay: 0.5, duration: 0.6, ease }}
                     className="flex gap-4 justify-center flex-wrap mb-10"
                 >
-                    <button className="relative flex items-center text-[0.92rem] font-semibold rounded-full h-12 p-1 ps-6 pe-14 bg-primary text-white group transition-all duration-500 hover:ps-14 hover:pe-6 overflow-hidden cursor-pointer shadow-[0_4px_20px_rgba(59,130,246,0.4)] active:scale-[0.97]">
+                    <a
+                        href="https://wa.me/6285742303620"
+                        className="relative flex items-center text-[0.92rem] font-semibold rounded-full h-12 p-1 ps-6 pe-14 bg-primary text-white group transition-all duration-500 hover:ps-14 hover:pe-6 overflow-hidden cursor-pointer shadow-[0_4px_20px_rgba(59,130,246,0.4)] active:scale-[0.97]"
+                    >
                         <span className="relative z-10 transition-all duration-500 whitespace-nowrap">
                             Konsultasi Dengan Kami
                         </span>
                         <div className="absolute right-1 w-10 h-10 bg-white text-primary rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
                             <ArrowUpRight size={16} strokeWidth={2.5} />
                         </div>
-                    </button>
-                    <button className="group relative flex items-center gap-1 overflow-hidden rounded-full border-[1.5px] border-white/20 bg-transparent px-8 py-[14px] text-[0.92rem] font-semibold text-text-primary cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:border-transparent hover:text-base hover:rounded-xl active:scale-[0.95]">
+                    </a>
+                    <a
+                        href="https://aron.iliterate.ai/register"
+                        className="group relative flex items-center gap-1 overflow-hidden rounded-full border-[1.5px] border-white/20 bg-transparent px-8 py-[14px] text-[0.92rem] font-semibold text-text-primary cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:border-transparent hover:text-base hover:rounded-xl active:scale-[0.95]"
+                    >
                         <ArrowRight className="absolute w-4 h-4 left-[-25%] stroke-white fill-none z-[9] group-hover:left-4 group-hover:stroke-base transition-all duration-[800ms] ease-[cubic-bezier(0.34,1.56,0.64,1)]" />
                         <span className="relative z-[1] -translate-x-3 group-hover:translate-x-3 transition-all duration-[800ms] ease-out">
                             Daftar Sekarang
                         </span>
                         <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-[50%] opacity-0 group-hover:w-[220px] group-hover:h-[220px] group-hover:opacity-100 transition-all duration-[800ms] ease-[cubic-bezier(0.19,1,0.22,1)]" />
                         <ArrowRight className="absolute w-4 h-4 right-4 stroke-white fill-none z-[9] group-hover:right-[-25%] group-hover:stroke-base transition-all duration-[800ms] ease-[cubic-bezier(0.34,1.56,0.64,1)]" />
-                    </button>
+                    </a>
                 </motion.div>
             </motion.div>
         </section>

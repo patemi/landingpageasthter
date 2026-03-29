@@ -98,13 +98,16 @@ export default function Pricing() {
                                     ))}
                                 </ul>
 
-                                <button className={`group w-full py-4 rounded-full text-[0.9rem] font-bold flex items-center justify-center gap-2 transition-all duration-200 active:scale-[0.97] ${plan.highlighted
+                                <a
+                                    href={plan.cta === 'Hubungi Sales' ? 'https://wa.me/6285742303620' : 'https://aron.iliterate.ai/register'}
+                                    className={`group w-full py-4 rounded-full text-[0.9rem] font-bold flex items-center justify-center gap-2 transition-all duration-200 active:scale-[0.97] ${plan.highlighted
                                         ? 'bg-white text-primary hover:bg-white/90 shadow-[0_4px_16px_rgba(0,0,0,0.15)]'
                                         : 'bg-primary text-white hover:bg-primary-dark shadow-[0_4px_16px_rgba(59,130,246,0.3)]'
-                                    }`}>
+                                    }`}
+                                >
                                     {plan.cta}
                                     <ArrowRight size={15} strokeWidth={2.5} className="group-hover:translate-x-0.5 transition-transform" />
-                                </button>
+                                </a>
                             </div>
                         </motion.div>
                     ))}
